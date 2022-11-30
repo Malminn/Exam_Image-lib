@@ -1,0 +1,247 @@
+/* CSS - GLOBAL
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔*/
+:root {
+	--color-hover: #ffffff;
+	--color-foreground: #e2d7be;
+	--color-background: #10191f;
+}
+* {
+	color: var(--color-foreground);
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 4;
+	box-sizing: inherit;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: var(--color-background);
+}
+main p:first-of-type {margin-top: 30px}
+main {
+	display: flex;
+	align-content: space-around;
+	height: px;
+	padding: 0 5%;
+	margin: 2vh 20px 2vh 2vw;
+	border-radius: 12px;
+	background-size: cover;
+	background-position: 50% 25%;
+	background-image: url(../images/reinhart-julian-WxM465oM4j4-unsplash.jpg);
+}
+h1 {
+	font-size: clamp(2.5rem, 8vw - 2rem, 4rem);
+	font-weight: 600;
+	text-align: center;
+	margin: 10px;
+}
+
+h2 {
+	font-size: clamp(1.5rem, 8vw - 2rem, 3rem);
+	font-weight: 500;
+	text-align: center;
+	margin: 10px;
+}
+p {
+	font-size: clamp(0.6rem, 8vw - 2rem, 0.9rem);
+}
+.number a.logo {
+	font-size: 1.5rem;
+	font-weight: 600;
+	font-family: Quicksand, sans-serif;
+	text-decoration: none;
+}
+.logo img {
+	margin-top: 13px;
+}
+
+li.navigation_li {
+	list-style: none;
+}
+
+a.navigation_li {
+	font-size: 1.1rem;
+	text-decoration: none;
+	padding: 8px 16px;
+	border-radius: 50px;
+}
+a.navigation_li.active {
+	text-decoration: underline;
+}
+a.navigation_li:hover {
+	color: #fff;
+	transition: 0.2s ease;
+}
+
+.navigation {
+	min-height: 120px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: flex-start;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav_ul {
+	margin-top: 2px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.dropDownNav {
+	display: none;
+	cursor: pointer;
+	width: 25px;
+	position: absolute;
+	top: 25px;
+	right: 5%;
+}
+@media (max-width: 600px) {
+	.hamburgerLine {
+		width: 25px;
+		height: 3px;
+		display: block;
+		margin: 5px auto;
+		border-radius: 20px;
+		transition: all 0.3s ease-in-out;
+		background-color: var(--color-foreground);
+	}
+	.hamburgerLine:hover {
+		background-color: var(--color-hover);
+	}
+
+	
+
+	.navigation {
+		min-height: 80px;
+	}
+	.dropDownNav {
+		display: block;
+	}
+	.dropDownNav.active .hamburgerLine:nth-child(2) {
+		opacity: 0;
+	}
+	.dropDownNav.active .hamburgerLine:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+	.dropDownNav.active .hamburgerLine:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+	.nav_ul {
+		position: fixed;
+		left: -100%;
+		top: 80px;
+		gap: 0;
+		flex-direction: column;
+		background-color: var(--color-background);
+		width: 94vw;
+		transition: 0.3s;
+		padding: 20px 20px;
+		align-items: flex-start;
+		border-radius: 20px;
+		box-shadow: 0px 2px 5px var(--color-foreground);
+	}
+	.navigation_li {
+		margin: 16px 8px;
+		color: var(--color-foreground);
+	}
+	navigation_li.active {
+		border-bottom: none;
+		color: #fe4e5b;
+	}
+	a.navigation_li:hover {
+		color: var(--color-hover);
+	}
+	.nav_ul.active {
+		left: 3vw;
+	}
+	main {
+		margin: 40px 2vw 0 2vw;
+		height: 260px;
+	}
+}
+
+/*
+   ╔════════╗
+   ║ BUTTON ║
+   ╚╦══════╦╝
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔*/
+button {
+	cursor: pointer;
+	border-radius: 4px;
+	background: #873c28;
+	color: white;
+}
+
+button:hover {
+	background: #873c28;
+}
+
+button:focus {
+	background: #874e3f;
+}
+
+/*
+   ╔════════╗
+   ║ FOOTER ║
+   ╚╦══════╦╝
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔*/
+footer {
+	background-color: #2e5561;
+	color: white;
+	text-align: center;
+	margin-top: auto;
+	padding: 40px 0px;
+}
+
+footer p {
+	margin: 0px;
+}
+
+.double-bounce1,
+.double-bounce2 {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	border-radius: 50%;
+	position: absolute;
+	background-color: #333;
+	-webkit-animation: sk-bounce 2s infinite ease-in-out;
+	animation: sk-bounce 2s infinite ease-in-out;
+}
+
+.double-bounce2 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes sk-bounce {
+	0%,
+	100% {
+		-webkit-transform: scale(-1);
+	}
+	50% {
+		-webkit-transform: scale(1);
+	}
+}
+
+@keyframes sk-bounce {
+	0%,
+	100% {
+		transform: scale(0);
+		-webkit-transform: scale(0);
+	}
+	50% {
+		transform: scale(1);
+	}
+}
