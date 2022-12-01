@@ -1,15 +1,17 @@
-.searchContainer {
+
+
+:root {
+	--color-hover: #ffffff;
+	--color-foreground: #e2d7be;
+	--color-background: #10191f;
+
+}.searchContainer {
 	max-width: 1000px;
-
 	margin: 0 auto;
-
 	padding: 30%px 10%;
-
 	text-align: center;
-
-	background-color: #56340f7f;
-
-	border: solid 28px #10191f;
+	border: solid 28px ;
+	border-color: var(--color-background);
 }
 
 
@@ -21,7 +23,7 @@
 	width: 85%;
 	height: 30px;
 
-	border-radius: 4px;
+
 	outline: solid 10px var(ba);
 	margin: 10px 0 auto 0;
 	border: none;

@@ -6,7 +6,6 @@
 	--color-hover: #ffffff;
 	--color-foreground: #e2d7be;
 	--color-background: #10191f;
-	--color-ice: 2e5561;
 }
 * {
 	color: var(--color-foreground);
@@ -18,7 +17,7 @@
 	box-sizing: inherit;
 	box-sizing: border-box;
 }
-
+.welcomeHeader{padding-top:30px}
 body {
 	display: flex;
 	min-height: 100vh;
@@ -60,7 +59,6 @@ li.navigation_li {
 	box-shadow: 0px 2px 1000px #83552f;
 	padding: 15 5px 5px 5px;
 background-color: var(--color-background);
-	border-radius: 10px;
 }
 a.navigation_li {
 	font-size: clamp(1rem, 8vw - 2rem, 1.6rem);
