@@ -24,21 +24,18 @@
 		<title>Immanent photo library</title>
 	</head>
 
-
-<!-- /*
+	<!-- 
    ╔══════╗
    ║ BODY ║
    ╚╦════╦╝
-▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔*/ -->
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
 	<body>
 		<header>
-
-
-<!-- /*
+			<!-- 
    ╔═════╗
    ║ NAV ║
    ╚╦═══╦╝
-▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔*/ -->
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
 			<nav class="navigation">
 				<a href="index.html" class="logo"
 					><img alt="logo" src="images/logo.png"
@@ -64,72 +61,92 @@
 			</div>
 		</header>
 
-<!--
+		<!--
    ╔══════╗
    ║ MAIN ║
    ╚╦════╦╝
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔-->
+
+		<h1>Welcome</h1>
+		<h2>to flash unsplash, where you simply just</h2>
+
+		<!-- 
+   ╔════════╗
+   ║ SEARCH ║
+   ╚╦══════╦╝
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔-->
+		<main>
+			<section class="searchContainer">
+				<div>
+					<form class="searchBar">
+						<input
+							type="text"
+							class="searchInput js-searchInput"
+							placeholder="Search high quality photos from Unsplash"
+							autofocus
+						/>
+						<button type="submit" class="searchBtn">Go</button>
+					</form>
+				</div>
 	
-			<h1>Welcome</h1>
-			<h2>to flash unsplash, where you simply just </h2>
-			
+				<div class="pageDescription">
+					<p>Here you can search for placeholdrer images</p>
+					<p>The photos are free! Powered by unsplash</p>
+				</div>
+				<div class="attribute">
+					<p>Just remember to attribute the photographer</p>
+					<a
+						href="https://unsplash.com/@reinhartjulian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+						><p>Photo by Reinhart Julian on Unsplash</p></a
+					>
+				</div>
+</main>
+				<!-- 
+   ╔══════╗
+   ║ MAIN ║
+   ╚╦════╦╝
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔-->
 
-			
+				<section class="API-Return">
+					<div><h3 class="numberOfResults"></h3></div>
 
+					<div>
+						<div class="searchResults"></div>
+					</div>
+					<div class="showMore">
+						<button class="hidden showMoreBtn">Show more</button>
+					</div>
+</section>
 
 <!--
-   ╔═════════════════╗
-   ║ SEARCHCONTAINER ║
-   ╚╦═══════════════╦╝
+   ╔════════╗
+   ║ LOADER ║
+   ╚╦══════╦╝
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔-->
-<main>		
-<section class="searchContainer">
-	
-				<form class="searchBar">
-					<input
-						type="text"
-						class="searchInput js-searchInput"
-						placeholder="Search high quality photos from Unsplash"
-						autofocus
-					/>
-					<button type="submit" class="searchBtn">Go</button>
-				</form>
-
 				
-			
-			<div class="pageDescription">
-				<p>Here you can search for placeholdrer images</p>
-				<p>The photos are free! Powered by unsplash</p>
-			</div>
-			<div class="attribute">
-				<p>Just remember to attribute the photographer</p>
-				<a href="https://unsplash.com/@reinhartjulian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"><p>Photo by Reinhart Julian on Unsplash</p></a>
-			</div>
+				<div class="animatedLoader hidden">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
 
+				<!-- 
+   ╔════════╗
+   ║ FOOTER ║
+   ╚╦══════╦╝
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
+				<footer>
+					<p>Stian Malmin</p>
+					<p>Copyright &copy; 2022</p>
+				</footer>
 
-		
-		</main>
-		<section class="API-Return">
-			<div>	<h3 class="numberOfResults"></h3></div>
-		
-			<div>
-				<div class="searchResults"></div>
-			</div>
-			<div class="showMore">
-				<button class="hidden showMoreBtn">Show more</button>
-			</div>
-		</section>
-		<div class="animatedLoader hidden">
-			<div class="double-bounce1"></div>
-			<div class="double-bounce2"></div>
-		</div>
-
-		<footer>
-			<p>Stian Malmin</p>
-			<p>Copyright &copy; 2022</p>
-		</footer>
+				<!--
+   ╔════════╗
+   ║ SCRIPT ║
+   ╚╦══════╦╝
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
+				<script src="/js/NAV.js"></script>
+				<script src="./js/imageSearch.js"></script>
+			</section>
+	
 	</body>
-
-	<script src="/js/NAV.js"></script>
-	<script src="./js/imageSearch.js"></script>
 </html>

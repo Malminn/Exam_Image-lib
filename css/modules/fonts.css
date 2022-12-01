@@ -1,0 +1,34 @@
+/*|=========================================*/
+/*|    STYLES FOR:       */
+/*|====================================================*/
+/*|    FONTS             				              */
+/*|==========================================================================================*/
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Hind+Madurai:300,regular,500,600,700);
+p {
+	font-size: clamp(0.8rem, 8vw - 2rem, 1.3rem);
+ font-weight: 600;
+ font-family: "Hind Madurai";
+}
+.headerText {
+	text-align: center;
+}@import url(https://fonts.googleapis.com/css?family=Caladea:regular,italic,700,700italic);
+
+/* -------------------- h1 -------------------- */
+h1 {
+	font-family: "Caladea";
+	font-size: clamp(2.5rem, 8vw - 2rem, 4rem);
+	font-weight: 600;
+	text-align: center;
+	margin: 10px;
+	text-decoration: none;
+}
+
+h2 {
+	font-family: "Caladea";
+	font-size: clamp(1.5rem, 8vw - 4rem, 2rem);
+	font-weight: 500;
+	text-align: center;
+	margin: 10px;
+	text-decoration: none;
+}

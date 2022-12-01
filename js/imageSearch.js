@@ -43,11 +43,11 @@ async function fetchResults(searchQuery) {
 			searchResults.insertAdjacentHTML(
 				"beforeend",
 				`
-		<div>
+		<div class=card>
 		<a href="specific.html?id=${result.id}">
-			<div class="result-item" style="background-image: url(${result.urls.small});"></div>
+			<div class="cardIMG" style="background-image: url(${result.urls.small});"></div>
 		</a>
-		<p class="photographer-name">
+		<p class="photographer-name cardTitle">
 			<a href=Photographer.html?username=${result.user.username} style="color: black; text-decoration:none;">Photo by ${result.user.name}</a>
 		</p>
 	</div>

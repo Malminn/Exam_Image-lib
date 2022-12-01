@@ -1,0 +1,45 @@
+.contact-details {
+	margin-left: 10%;
+	margin-bottom: 50px;
+}
+
+.contactForm {
+	width: 80%;
+	height: auto;
+	color: black;
+	padding: 35px;
+	font-size: 18px;
+	border-radius: 0;
+	position: relative;
+	background-color: white;
+	border: 1px solid black;
+	margin: 10px auto 0 auto;
+}
+
+input[type="text"],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	font-size: 15px;
+	resize: vertical;
+	font-family: roboto;
+	margin: 6px 0 15px 0;
+	border: 1px solid #000;
+}
+
+input[type="submit"] {
+	width: 100%;
+	color: white;
+	padding: 15px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: rgb(26, 50, 61);
+}
+
+input[type="submit"]:hover {
+	color: rgb(24, 48, 51);
+	transition: 0.3s;
+	background-color: rgb(124, 146, 172);
+}

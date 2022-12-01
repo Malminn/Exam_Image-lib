@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<meta
+			name="description"
+			content="Photo library powered by unsplash"
+		/>
+
+		<script
+			src="https://kit.fontawesome.com/292441d70e.js"
+			crossorigin="anonymous"
+		></script>
+		<link href="/css/global.css" rel="stylesheet" />
+		<link href="css\contactForm.css" rel="stylesheet" />
+
+		<title>Immanent photo library</title>
+	</head>
+
+	<!-- 
+   ╔═════╗
+   ║ NAV ║
+   ╚╦═══╦╝
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
+	<body>
+		<nav class="navigation">
+			<a href="index.html" class="logo"
+				><img alt="logo" src="images/logo.png"
+			/></a>
+
+			<ul class="nav_ul">
+				<li class="navigation_li">
+					<a href="index.html" class="navigation_li active">Home</a>
+				</li>
+				<li class="navigation_li">
+					<a href="about.html" class="navigation_li">About</a>
+				</li>
+				<li class="navigation_li">
+					<a href="contact.html" class="navigation_li">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="dropDownNav">
+			<span class="hamburgerLine"></span>
+			<span class="hamburgerLine"></span>
+			<span class="hamburgerLine"></span>
+		</div>
+
+		<!--
+   ╔════════════════╗
+   ║  CONTACT INFO  ║
+   ╚╦══════════════╦╝
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
+
+		<div class="contact-details">
+			<p>Stian Malmin</p>
+			<p>Daleveien 323</p>
+			<p>4329 Sandnes</p>
+			<p>Malminn@hotmail.com</p>
+			<p>+47 45515006</p>
+		</div>
+
+		<!--
+   ╔══════╗
+   ║ FORM ║
+   ╚╦════╦╝
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔-->
+		<div class="contactForm">
+			<p class="validation"></p>
+
+			<form id="contactForm">
+				<!-- 
+   Full Name 
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
+				<div>
+					<label for="fname">Full Name</label>
+					<input
+						type="text"
+						id="fname"
+						name="fname"
+						placeholder="Your name"
+					/>
+					<div class="form-error" id="fnameError">
+						Your name must be more than 5 characters.
+					</div>
+				</div>
+				<!-- 
+   Email 
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
+				<div>
+					<label for="email">Email</label>
+					<input
+						type="text"
+						id="email"
+						name="email"
+						placeholder="email@example.com"
+					/>
+					<div class="form-error" id="emailError">
+						Please enter a valid e-mail address.
+					</div>
+				</div>
+				<!-- 
+   Subject 
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
+				<div>
+					<label for="subject">Subject</label>
+					<input
+						type="text"
+						id="subject"
+						name="subject"
+						placeholder="Subject of your message"
+					/>
+					<div class="form-error" id="subjectError">
+						Your subject must be more than 15 characters.
+					</div>
+				</div>
+				<!-- 
+   Message 
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
+				<div>
+					<label for="message">Message</label>
+					<textarea
+						id="message"
+						name="message"
+						placeholder="Your message"
+						style="height: 190px"
+					></textarea>
+					<div class="form-error" id="messageError">
+						Your message must be more than 25 characters.
+					</div>
+				</div>
+				<!-- 
+   Submit 
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
+				<input type="submit" id="button" value="SEND MESSAGE" />
+			</form>
+		</div>
+	</body>
+
+	<!--
+   ╔════════╗
+   ║ SCRIPT ║
+   ╚╦══════╦╝
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔-->
+	<script src="/js/contact.js"></script>
+</html>

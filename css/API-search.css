@@ -1,9 +1,10 @@
 .searchContainer {
-	width: 100%;
+
 	max-width: 1200px;
 	margin: auto;
 	padding: 30px 30px;
 	text-align: center;
+	background-color: #56340f7f;
 }
 
 .searchInput {
@@ -35,35 +36,64 @@
 	font-size: 1.5em;
 }
 
+/*
+   ╔═════════════╗
+   ║ IMAGES LIST ║
+   ╚╦═══════════╦╝
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔*/
 .searchResults {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 20px;
-	padding: 25px;
+	width: 90vw;
+	display: flex;
+	justify-content: space-around;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-left: 5vw;
+	margin-right: 5vw;
 }
 
-.result-item {
-	width: 250px;
+.card:hover {
+	transform: scale(1.03);
+	transition: 0.3s ease-in-out;
+}
+
+.cardTitle {
+	text-align: center;
+	padding: 20px 0px;
+}
+
+.date {
+	color: rgb(56, 56, 56);
+	font-size: 0.8em;
+}
+.card {
+	width: 350px;
+}
+.cardIMG {
+	padding: 0px;
+	margin: 0px;
 	height: 250px;
-	padding: 5px;
-	border-radius: 4px;
+	width: 350px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.photographer-name {
-	padding: 7px;
-	font-size: 1.2em;
-	letter-spacing: 0.7px;
-}
+@media all and (min-width: 800px) {
+	.blogCardsContainer {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 1200px;
+	}
 
-.photographer-name:hover {
-	text-decoration: underline;
-}
+	.card {
+		margin: 10px;
 
-.github-link {
-	color: #ff0000;
-	text-decoration: none;
-}
+	}
 
-a:hover {
-	text-decoration: underline;
+	.cardIMG {
+		height: 250px;
+		width: 350px;
+	}
 }
