@@ -6,7 +6,7 @@
 	--color-hover: #ffffff;
 	--color-foreground: #e2d7be;
 	--color-background: #10191f;
-	--color-ice: 2e5561
+	--color-ice: 2e5561;
 }
 * {
 	color: var(--color-foreground);
@@ -32,11 +32,12 @@ main {
 	background-color: #633d1f;
 	display: flex;
 	align-content: space-around;
-	padding: 0 15px;
+	height: 40vh;
+
 	margin: 2vh 4vh;
 	border-radius: 18px;
 	background-size: cover;
-	background-position: 50% 25%;
+	background-position: 80% 36%;
 	background-image: url(../images/reinhart-julian-WxM465oM4j4-unsplash.jpg);
 }
 
@@ -56,9 +57,9 @@ li.navigation_li {
 	list-style: none;
 }
 .searchBar {
-	padding: 10px;
-	background-color: var(--color-background);
-	width: fit-content;
+	box-shadow: 0px 2px 1000px #83552f;
+	padding: 15 5px 5px 5px;
+background-color: var(--color-background);
 	border-radius: 10px;
 }
 a.navigation_li {
@@ -199,6 +200,10 @@ footer {
 	border: px #1c333a;
 }
 
+.animatedLoader {
+	max-width: 200px;
+	height: 200px;
+}
 .double-bounce1,
 .double-bounce2 {
 	top: 0;
@@ -208,33 +213,35 @@ footer {
 	opacity: 0.8;
 	border-radius: 50%;
 	position: absolute;
-	background-color: #333;
+	background-color: rgba(75, 111, 125, 0.416);
+	box-shadow: 0px 2px 80px #da6a7c;
 	-webkit-animation: sk-bounce 2s infinite ease-in-out;
 	animation: sk-bounce 2s infinite ease-in-out;
 }
 
 .double-bounce2 {
-	-webkit-animation-delay: 0.2s;
-	animation-delay: 1s;
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.0s;
 }
 
 @-webkit-keyframes sk-bounce {
 	0%,
 	100% {
-		-webkit-transform: scale(-1);
+		-webkit-transform: scale(0);
 	}
 	50% {
-		-webkit-transform: scale(1);
+		-webkit-transform: scale(0.05);
 	}
 }
 
 @keyframes sk-bounce {
 	0%,
 	100% {
-		transform: scale(0);
 		-webkit-transform: scale(0);
+		transform: scale(0);
+
 	}
 	50% {
-		transform: scale(1);
+		transform: scale(0.08);
 	}
 }

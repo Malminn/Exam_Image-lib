@@ -1,26 +1,37 @@
 .searchContainer {
+	max-width: 1000px;
 
-	max-width: 1200px;
-	margin: auto;
-	padding: 30px 30px;
+	margin: 0 auto;
+
+	padding: 30%px 10%;
+
 	text-align: center;
+
 	background-color: #56340f7f;
+
+	border: solid 28px #10191f;
 }
 
+
+.searchBar {
+	width: 100%;
+	display: flex;
+}
 .searchInput {
-	width: 480vw;
-	max-width: 400px;
-	height: 3vw;
-	max-height: 40px;
+	width: 85%;
+	height: 30px;
+
 	border-radius: 4px;
-	outline: none;
+	outline: solid 10px var(ba);
+	margin: 10px 0 auto 0;
+	border: none;
 }
 
 .searchBtn {
-	height: 3vw;
+	height: 30px;
 	max-height: 40px;
-	width: 60px;
-
+	width: 15%;
+	margin: 10px 0 auto 0;
 	border: none;
 }
 
@@ -28,12 +39,11 @@
 	display: none;
 }
 
-.result-stats {
+.numberOfResults {
 	width: 100vw;
 	text-align: center;
 	color: gray;
-	padding-top: 15px;
-	font-size: 1.5em;
+	padding-bottom: 6vh;
 }
 
 /*
@@ -89,7 +99,6 @@
 
 	.card {
 		margin: 10px;
-
 	}
 
 	.cardIMG {

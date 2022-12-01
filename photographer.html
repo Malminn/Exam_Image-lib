@@ -1,16 +1,8 @@
-<!--
-
-🅷🆃🅼🅻​-𝓟𝓱𝓸𝓽𝓸𝓰𝓻𝓪𝓹𝓱𝓮𝓻
-▔▔▔▔▔▔▔▔▔▔▔▔▔
-
-   ╔══════╗
-   ║ HEAD ║
-   ╚╦════╦╝
-▔▔​▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
+<!-- 🅷🆃🅼🅻​-𝓟𝓱𝓸𝓽𝓸𝓰𝓻𝓪𝓹𝓱𝓮𝓻
+▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
+<!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Meta 
-		▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta
@@ -21,44 +13,66 @@
 			name="description"
 			content="Photo library powered by unsplash"
 		/>
-
-		<!-- Font Awesome 
-		▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
+		<link
+			rel="stylesheet"
+			href="https://use.typekit.net/yen1uje.css"
+		/>
 		<script
 			src="https://kit.fontawesome.com/292441d70e.js"
 			crossorigin="anonymous"
 		></script>
-
-		<!-- Stylesheet 
-		▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
-		<link href="./css/global.css" rel="stylesheet" />
-		<link href="./css/photographer.css" rel="stylesheet" />
+		<link href="/css/global.css" rel="stylesheet" />
+		<link href="/css/photographer.css" rel="stylesheet" />
 		<title>Immanent photo library</title>
 	</head>
 
-	<body>
-		<!-- 
-   ╔════════════╗
-   ║ NAVIGATION ║
-   ╚╦══════════╦╝
+	<!-- 
+   ╔══════╗
+   ║ BODY ║
+   ╚╦════╦╝
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
+	<body>
 		<header>
-			<nav>
-				<a class="Hamburger fontawesome-reorder"></a>
-				<ul>
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact Us</a></li>
+			<!-- 
+╔═════╗
+║ NAV ║
+╚╦═══╦╝
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
+			<nav class="navigation">
+				<a href="index.html" class="logo"
+					><img alt="logo" src="images/logo.png"
+				/></a>
+
+				<ul class="nav_ul">
+					<li class="navigation_li">
+						<a href="index.html" class="navigation_li active">Home</a>
+					</li>
+					<li class="navigation_li">
+						<a href="about.html" class="navigation_li">About</a>
+					</li>
+					<li class="navigation_li">
+						<a href="contact.html" class="navigation_li">Contact</a>
+					</li>
 				</ul>
 			</nav>
+
+			<div class="dropDownNav">
+				<span class="hamburgerLine"></span>
+				<span class="hamburgerLine"></span>
+				<span class="hamburgerLine"></span>
+			</div>
 		</header>
 
 		<!-- 
+		
    ╔══════════════════════╗
    ║ PHOTOGRAPHER PROFILE ║
    ╚╦════════════════════╦╝		api results
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
-		<div class="profileContainer"></div>
+<h1 class="header">Photographer</h1>
+		<section class="profile">
+			<div class="profileContainer"></div>
+		</section>
 
 		<!-- 
    ╔══════════════════════╗
@@ -66,25 +80,19 @@
    ╚╦════════════════════╦╝	api results
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
 		<div class="numberOfResults"></div>
-		<div class="photographerImages"></div>
-
+		<div class="resultsContainer"></div>
 		<div class="showMore">
 			<button class="hidden showMoreBtn">Show more</button>
 		</div>
-	</div>
-
 		<!--
    ╔══════════════════╗
    ║ LOADER ANIMATION ║
    ╚╦════════════════╦╝
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔-->
-
-
 		<div class="animatedLoader hidden">
 			<div class="double-bounce1"></div>
 			<div class="double-bounce2"></div>
 		</div>
-
 		<!-- 
    ╔════════╗
    ║ FOOTER ║
@@ -94,13 +102,13 @@
 			<p>Stian Malmin</p>
 			<p>Copyright &copy; 2022</p>
 		</footer>
-
 		<!-- 
    ╔════════╗
    ║ SCRIPT ║
    ╚╦══════╦╝
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ -->
-<script src="/js/nav.js"></script>
-		<script src="./js/photographerProfile.js"></script>
+		<script src="/js/nav.js"></script>
+		<script src="./js/photographer.js"></script>
+		<script src="/js/nav.js"></script>
 	</body>
 </html>

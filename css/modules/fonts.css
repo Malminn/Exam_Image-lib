@@ -1,10 +1,15 @@
-/*|=========================================*/
-/*|    STYLES FOR:       */
-/*|====================================================*/
-/*|    FONTS             				              */
-/*|==========================================================================================*/
+
+
+/*
+   ╔══════════════╗
+   ║ GOOGLE FONTS ║
+   ╚╦════════════╦╝
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔*/
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Hind+Madurai:300,regular,500,600,700);
+
+/* ———————————————————————————————————————————— */
+
 p {
 	font-size: clamp(0.8rem, 8vw - 2rem, 1.3rem);
  font-weight: 600;

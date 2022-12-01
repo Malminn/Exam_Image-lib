@@ -7,3 +7,41 @@ body {
 	justify-content: center;
 	flex-direction: column;
 }
+.specificContainer {
+	padding: 4vw;
+}
+
+.imageContainer {
+	display: flex;
+	justify-content: center;
+}
+.image {
+	width: 60wv;
+	height: 60vh;
+	border: 1px solid #34495e;
+	margin: 0 auto;
+}
+.image-contain {
+	object-fit: contain;
+	object-position: center;
+}
+
+.location {
+}
+/* 
+<div class="container">
+
+<a href= Photographer.html?username=${result.user.username}>
+	<h1>${result.user.name}</h1>		
+</a>	
+
+<div class=imageContainer>
+	<img src="${result.urls.regular}">
+</div>
+
+<div>${result.description}
+</div>						
+
+<div class=location>
+${result.location.country}<p>
+</div>	 */

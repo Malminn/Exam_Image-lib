@@ -15,7 +15,7 @@ const params = new URLSearchParams(query);
 const username = params.get("username");
 const profileURL = `https://api.unsplash.com/users/${username}?client_id=${apiKey}&username=${username}`;
 const imagesURL = `https://api.unsplash.com/users/${username}/photos?client_id=${apiKey}&username=${username}`;
-
+const resultsContainer = document.querySelector(".resultsContainer")
 console.warn(profileURL);
 console.warn(imagesURL);
 
@@ -39,10 +39,13 @@ async function getProfile() {
 		const result = await response.json();
 
 		profileContainer.innerHTML += `		
-	<h1>photagrapher ${result.name}</h1>
-	<div class=imageContainer>
-	<img class = "imageOfPhotographer" src="${result.profile_image.large}" />
-	</div>
+	
+		<div class=imageContainer>
+				<img class = "image" src="${result.profile_image.large}" />
+			</div>
+
+				<h2 class=name> The photographer behind these wonderful images <br> goes by the name of  ${result.name}</h2>
+	
 `;
 	} catch (err) {
 		console.error(err);
@@ -80,17 +83,17 @@ async function getImages() {
 		numberOfResults.textContent = `The photographer has posted ${totalResults} images`;
 
 		result.forEach((result) => {
-			photographerImages.insertAdjacentHTML(
+			resultsContainer.insertAdjacentHTML(
 				"beforeend",
 				`
-	<div>
-	<a href="specific.html?id=${result.id}">
-		<div class="result-item" style="background-image: url(${result.urls.small});"></div>
-	</a>
-	<p class="photographer-name">
-		<a href=Photographer.html?username=${result.user.username} style="color: black; text-decoration:none;">Photo by ${result.user.name}</a>
-	</p>
-</div>
+				<div class=card>
+				<a href="specific.html?id=${result.id}">
+					<div class="cardIMG" style="background-image: url(${result.urls.small});"></div>
+				</a>
+				<p class="photographer-name cardTitle">
+					<a href=Photographer.html?username=${result.user.username} style="color: black; text-decoration:none;">Photo by ${result.user.name}</a>
+				</p>
+			</div>
 `
 			);
 		});
