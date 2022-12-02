@@ -31,9 +31,7 @@
 	margin: 15px auto;
 }
 
-
-	*/
-	.resultsContainer {
+*/ .resultsContainer {
 	width: 90vw;
 	display: flex;
 	flex-wrap: wrap;

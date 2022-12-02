@@ -17,7 +17,9 @@
 	box-sizing: inherit;
 	box-sizing: border-box;
 }
-.welcomeHeader{padding-top:30px}
+.welcomeHeader {
+	padding-top: 30px;
+}
 body {
 	display: flex;
 	min-height: 100vh;
@@ -58,7 +60,7 @@ li.navigation_li {
 .searchBar {
 	box-shadow: 0px 2px 1000px #83552f;
 	padding: 15 5px 5px 5px;
-background-color: var(--color-background);
+	background-color: var(--color-background);
 }
 a.navigation_li {
 	font-size: clamp(1rem, 8vw - 2rem, 1.6rem);
@@ -92,7 +94,7 @@ a.navigation_li:hover {
 	align-items: center;
 }
 
-.dropDownNav {
+.dropDown {
 	display: none;
 	cursor: pointer;
 	width: 25px;
@@ -117,16 +119,16 @@ a.navigation_li:hover {
 	.navigation {
 		min-height: 80px;
 	}
-	.dropDownNav {
+	.dropDown {
 		display: block;
 	}
-	.dropDownNav.active .hamburgerLine:nth-child(2) {
+	.dropDown.active .hamburgerLine:nth-child(2) {
 		opacity: 0;
 	}
-	.dropDownNav.active .hamburgerLine:nth-child(1) {
+	.dropDown.active .hamburgerLine:nth-child(1) {
 		transform: translateY(8px) rotate(45deg);
 	}
-	.dropDownNav.active .hamburgerLine:nth-child(3) {
+	.dropDown.active .hamburgerLine:nth-child(3) {
 		transform: translateY(-8px) rotate(-45deg);
 	}
 	.nav_ul {
@@ -219,7 +221,7 @@ footer {
 
 .double-bounce2 {
 	-webkit-animation-delay: 0.1s;
-	animation-delay: 0.0s;
+	animation-delay: 0s;
 }
 
 @-webkit-keyframes sk-bounce {
@@ -237,7 +239,6 @@ footer {
 	100% {
 		-webkit-transform: scale(0);
 		transform: scale(0);
-
 	}
 	50% {
 		transform: scale(0.08);

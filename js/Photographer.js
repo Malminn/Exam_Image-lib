@@ -15,7 +15,7 @@ const params = new URLSearchParams(query);
 const username = params.get("username");
 const profileURL = `https://api.unsplash.com/users/${username}?client_id=${apiKey}&username=${username}`;
 const imagesURL = `https://api.unsplash.com/users/${username}/photos?client_id=${apiKey}&username=${username}`;
-const resultsContainer = document.querySelector(".resultsContainer")
+const resultsContainer = document.querySelector(".resultsContainer");
 console.warn(profileURL);
 console.warn(imagesURL);
 
@@ -87,7 +87,7 @@ async function getImages() {
 				"beforeend",
 				`
 				<div class=card>
-				<a href="specific.html?id=${result.id}">
+				<a href="./specific.html?id=${result.id}">
 					<div class="cardIMG" style="background-image: url(${result.urls.small});"></div>
 				</a>
 				<p class="photographer-name cardTitle">

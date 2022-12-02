@@ -1,19 +1,16 @@
-
-
 :root {
 	--color-hover: #ffffff;
 	--color-foreground: #e2d7be;
 	--color-background: #10191f;
-
-}.searchContainer {
+}
+.searchContainer {
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 30%px 10%;
 	text-align: center;
-	border: solid 28px ;
+	border: solid 28px;
 	border-color: var(--color-background);
 }
-
 
 .searchBar {
 	width: 100%;
@@ -22,7 +19,6 @@
 .searchInput {
 	width: 85%;
 	height: 30px;
-
 
 	outline: solid 10px var(ba);
 	margin: 10px 0 auto 0;

@@ -44,7 +44,7 @@ async function fetchResults(searchQuery) {
 				"beforeend",
 				`
 		<div class=card>
-		<a href="specific.html?id=${result.id}">
+		<a href="./specific.html?id=${result.id}">
 			<div class="cardIMG" style="background-image: url(${result.urls.small});"></div>
 		</a>
 		<p class="photographer-name cardTitle">

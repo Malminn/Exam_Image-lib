@@ -28,22 +28,36 @@ async function GetSpecificImage() {
 	const response = await fetch(url);
 	const result = await response.json();
 
-	specificContainer.innerHTML += `
-	
+	let description = `No description to be found.<br>The image says it all";`;
+	if (description) {
+		description = result.description;
+	}
 
-		<a href= Photographer.html?username=${result.user.username}>
-			<h2 class=photographer>See more from Photographer: ${result.user.name}</h2>		
-		</a>	
-		<div><p>${result.description}</p>
+	let location = `Location for this image is not known`;
+	if (result.user.location) {
+		location = result.user.location;
+	}
+
+
+	specificContainer.innerHTML += `
+		<div>	
+			<p class=photographer>Photographer: ${result.user.name}</p>	
+		</div>
+
+		<div>
+			<p>description:${description}</p>
 		</div>	
-		<div class=imageContainer><img class=image image-contain src=${result.urls.small} /></div>
-		
-		<div class=location>
-		<p>${result.location.country}</p>
-		</div>		
+
+		<div class=location>	<p>location: ${location}</p></div>
+	
+		<div class=imageContainer>
+			<img class=image image-contain src=${result.urls.small} />
+		</div>
+
 <a href= ${result.download} class=button DLbutton>Download full size</a>
-		
+		<a href= Photographer.html?username=${result.user.username}>
+		<p>More from this photographer</p>
+		</a>	
 `;
 }
-
 GetSpecificImage();
