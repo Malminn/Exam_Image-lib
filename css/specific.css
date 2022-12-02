@@ -2,19 +2,21 @@
 		css - Image specific
 ———————————————————————————————————————————————————————————————————————— */
 
-body {
+.specificContainer {
 	display: flex;
+	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-}
-.specificContainer {
-	padding: 4vw;
-}
+margin-top: 40px;
 
+}
+.photographer div{display: flex;}
+.photographer div p{margin: 4px auto}
 .imageContainer {
 	display: flex;
 	justify-content: center;
 }
+.imageContainer{margin:30px}
 .image {
 	width: 60wv;
 	height: 60vh;

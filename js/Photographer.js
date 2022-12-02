@@ -71,7 +71,7 @@ showMoreBtn.addEventListener("click", () => {
    ║ PHOTOGRAPHER IMAGES ║
    ╚╦═══════════════════╦╝
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔*/
-animatedLoader.classList.remove("hidden");
+
 async function getImages() {
 	try {
 		const response = await fetch(imagesURL);
@@ -85,29 +85,19 @@ async function getImages() {
 		result.forEach((result) => {
 			resultsContainer.insertAdjacentHTML(
 				"beforeend",
-				`
-				<div class=card>
+				`<div class=card>
 				<a href="./specific.html?id=${result.id}">
 					<div class="cardIMG" style="background-image: url(${result.urls.small});"></div>
 				</a>
 				<p class="photographer-name cardTitle">
 					<a href=Photographer.html?username=${result.user.username} style="color: black; text-decoration:none;">Photo by ${result.user.name}</a>
 				</p>
-			</div>
-`
+			</div>`
 			);
 		});
-
-		/* add show More button 
-▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ */
-		showMoreBtn.classList.remove("hidden");
-		if (page >= totalResults) {
-			showMoreBtn.innerHTML = "no more content";
-		}
 	} catch (err) {
 		console.error(err);
 		alert("Failed to search Unsplash");
 	}
-	animatedLoader.classList.add("hidden");
 }
 getImages();

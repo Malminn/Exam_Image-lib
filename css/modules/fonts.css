@@ -12,7 +12,7 @@
 
 p {
 	font-size: clamp(0.8rem, 8vw - 2rem, 1.3rem);
- font-weight: 600;
+ font-weight: 400;
  font-family: "Hind Madurai";
 }
 .headerText {

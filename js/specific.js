@@ -40,24 +40,23 @@ async function GetSpecificImage() {
 
 
 	specificContainer.innerHTML += `
-		<div>	
-			<p class=photographer>Photographer: ${result.user.name}</p>	
-		</div>
-
-		<div>
-			<p>description:${description}</p>
-		</div>	
-
-		<div class=location>	<p>location: ${location}</p></div>
+	<div><h2>Posted by ${result.user.name}</h2></div>
+	<div class=location>	<p>location: ${location}</p></div>
+	<a href= Photographer.html?username=${result.user.username}><p>More from this photographer</p>	</a>
 	
 		<div class=imageContainer>
 			<img class=image image-contain src=${result.urls.small} />
 		</div>
+		<p>${description}</p>
+		</div>	
+<a href= ${result.download} class=button DLbutton><p>Download full size</p></a>
+		
+	
 
-<a href= ${result.download} class=button DLbutton>Download full size</a>
-		<a href= Photographer.html?username=${result.user.username}>
-		<p>More from this photographer</p>
-		</a>	
+
+	<div>
+		
+	
 `;
 }
 GetSpecificImage();

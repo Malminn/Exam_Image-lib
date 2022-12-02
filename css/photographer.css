@@ -31,15 +31,15 @@
 	margin: 15px auto;
 }
 
-*/ .resultsContainer {
+.resultsContainer {
 	width: 90vw;
 	display: flex;
+	justify-content: space-around;
+	align-content: flex-start;
 	flex-wrap: wrap;
+	flex-direction: row;
 	margin-left: 5vw;
 	margin-right: 5vw;
-	flex-direction: row;
-	align-content: center;
-	justify-content: space-around;
 }
 
 .card:hover {
