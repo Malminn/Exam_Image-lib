@@ -22,20 +22,28 @@
 }
 body {
 	min-height: 100vh;
-
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: nowrap;
+	flex-direction: column;
 	background-color: var(--color-background);
 }
+.pageDescription {margin-top: 100px;}
 main p:first-of-type {
-	margin-top: 30px;
+	margin-top: 15px;
 }
 main {
+	align-self: center;
+	width: 100vw;
+
 	background-color: #633d1f;
 	display: flex;
 	align-content: space-around;
 	height: 40vh;
-
+	min-height: 300px;
 	margin: 2vh 4vh;
-	border-radius: 18px;
+	border-radius: 80px;
 	background-size: cover;
 	background-position: 80% 36%;
 	background-image: url(../images/reinhart-julian-WxM465oM4j4-unsplash.jpg);
@@ -57,9 +65,7 @@ li.navigation_li {
 	list-style: none;
 }
 .searchBar {
-	box-shadow: 0px 2px 1000px #83552f;
-	padding: 15 5px 5px 5px;
-	background-color: var(--color-background);
+	padding: 5px 5px 5px 5px;
 }
 a.navigation_li {
 	font-size: clamp(1rem, 8vw - 2rem, 1.6rem);

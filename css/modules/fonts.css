@@ -10,10 +10,13 @@
 
 /* ———————————————————————————————————————————— */
 
-p {
+* p {
 	font-size: clamp(0.8rem, 8vw - 2rem, 1.3rem);
- font-weight: 400;
+ font-weight: 500;
  font-family: "Hind Madurai";
+ text-shadow: rgb(0, 0, 0) 1px 1px 10px;
+ padding-inline: 20px;
+ background-color: blac;
 }
 .headerText {
 	text-align: center;
