@@ -1,104 +1,105 @@
-/*|=========================================*/
-/*|    STYLES FOR:       */
-/*|====================================================*/
-/*|    NAVIGATION             				            */
-/*|==========================================================================================*/
-
+/*  
+  ╔════════════╗
+  ║ NAVIGATION ║
+  ╚╦══════════╦╝
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔ */
 a {
-  color: white;
-  font-size-adjust: 200%;
+	color: white;
+	font-size-adjust: 200%;
 }
-
+a img {
+	height: 40px;
+}
 .navContainer {
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #11191d;
+	display: flex;
+	text-align: center;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #11191d;
 
-  width: 100%;
-  flex-direction: column;
-  padding: 1.4em;
-  margin: 1em;
+	width: 100%;
+	flex-direction: column;
+	padding: 1.4em;
+	margin: 1em;
 }
 
-/* ---------- checkbox hamburger menu --------- */
+/*  checkbox hamburger menu  */
 .hamburgerContainer {
-  position: relative;
-  size-adjust: 300%;
+	position: relative;
+	size-adjust: 300%;
 }
 .hamburgerCheckBox {
-  display: none;
-  z-index: 100;
+	display: none;
+	z-index: 100;
 }
 
 .hamburger {
-  z-index: 100;
-  left: 85vw;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	z-index: 100;
+	left: 85vw;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* ---- drawing hamburger menu middle part ---- */
 .lines {
-  outline: 0.1px solid rgba(255, 255, 255, 0.398);
-  position: absolute;
-  z-index: 10;
-  flex: none;
-  width: 50px;
-  height: 3px;
-  background: #b0f6ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.05s ease-in-out;
+	outline: 0.1px solid rgba(255, 255, 255, 0.398);
+	position: absolute;
+	z-index: 10;
+	flex: none;
+	width: 50px;
+	height: 3px;
+	background: #b0f6ff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.05s ease-in-out;
 }
 
 /* ------ top and btm lines of hamburger ------ */
 .lines::before,
 .lines::after {
-  outline: 1px solid rgba(255, 255, 255, 0.153);
-  content: "";
-  position: absolute;
-  z-index: 10;
-  top: -12px;
-  width: 100%;
-  height: 2px;
-  background: inherit;
+	outline: 1px solid rgba(255, 255, 255, 0.153);
+	content: "";
+	position: absolute;
+	z-index: 10;
+	top: -12px;
+	width: 100%;
+	height: 2px;
+	background: inherit;
 }
 .lines::after {
-  top: 12px;
-  width: 100%;
-  height: 2px;
-  background: inherit;
+	top: 12px;
+	width: 100%;
+	height: 2px;
+	background: inherit;
 }
 /* --------- making the hamburger spin -------- */
 .hamburgerCheckBox:checked + .hamburger > div {
-  transform: rotate(130deg);
+	transform: rotate(130deg);
 }
 
 .hamburgerCheckBox:checked + .hamburger > div:before,
 .hamburgerCheckBox:checked + .hamburger > div:after {
-  transform: rotate(100deg);
+	transform: rotate(100deg);
 }
 /* --- navigation links visibility transform -- */
 
 .menu {
-  color: white;
-  flex-flow: column wrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: fill;
-  transform: scale(1);
-  transition-duration: 0.1s;
-  width: 100%;
+	color: white;
+	flex-flow: column wrap;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: fill;
+	transform: scale(1);
+	transition-duration: 0.1s;
+	width: 100%;
 }
 .menuContainer {
-  display: flex;
-  margin-top: 2em;
+	display: flex;
+	margin-top: 2em;
 }
